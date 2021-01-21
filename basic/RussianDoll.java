@@ -24,10 +24,10 @@ public class RussianDoll {
 	        System.out.println(whatsgoingon);
 	        for(int i=pos;i<env.length;i++){
 	        	hs.add(env[i][0]+""+env[i][1]);
-	            if(x<=env[i][0] && y<= env[i][1] ){
-	                recur(env, count+1, i+1,env[i][0],env[i][1],hs,whatsgoingon+"|"+env[i][0]+"-"+env[i][1]);
-	            }
-	        hs.remove(env[i][0]+""+env[i][1]);
+			    if(x<=env[i][0] && y<= env[i][1] ){
+				recur(env, count+1, i+1,env[i][0],env[i][1],hs,whatsgoingon+"|"+env[i][0]+"-"+env[i][1]);
+			    }
+	      		hs.remove(env[i][0]+""+env[i][1]);
 	        }
 	    }
 }
