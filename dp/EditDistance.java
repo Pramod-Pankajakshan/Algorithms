@@ -22,11 +22,11 @@ class EditDistance {
     // DP compute 
     for (int i = 1; i < n + 1; i++) {
       for (int j = 1; j < m + 1; j++) {
-        int left = d[i - 1][j] + 1;
-        int down = d[i][j - 1] + 1;
-        int left_down = d[i - 1][j - 1];
-        if (word1.charAt(i - 1) != word2.charAt(j - 1))
-          left_down += 1;
+        int left      = d[i - 1][j] + 1;
+        int down      = d[i][j - 1] + 1;
+        int left_down = d[i - 1][j - 1] + 1;
+        if (word1.charAt(i - 1) == word2.charAt(j - 1))
+          left_down -= 1;  // why? 
         d[i][j] = Math.min(left, Math.min(down, left_down));
 
       }
