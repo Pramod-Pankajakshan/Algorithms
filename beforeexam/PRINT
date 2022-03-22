@@ -1,0 +1,6 @@
+		int [] in= new int[] {1,2};
+		Integer ins[]=Arrays.stream(in).boxed().toArray(Integer[]::new);
+		int [] inss=Arrays.stream(ins).mapToInt(Integer::intValue).toArray();
+		TreeSet<Kv> s= new TreeSet<>((Kv o1, Kv o2)->o1.c-o2.c);
+		List<String> ls= Arrays.asList("3","1","44");
+		

@@ -1,0 +1,7 @@
+/// best meeting point - 296
+ put positions x and y in a list and sort them
+ find the middle
+ calculate manhattan distance math.abs(x-i)+math.abs(y-i)+
+// moving average
+// have an array of window size
+// reset the counter and start from 0 
